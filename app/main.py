@@ -20,3 +20,10 @@ async def page(request: Request, page_name: str):
         "page": page_name
     }
     return templates.TemplateResponse("page.html", {"request": request, "data": data})
+
+@app.get("/user/{user_name}", response_class=HTMLResponse)
+async def user_link(request: Request, user_name: str):
+    data = {
+        "page": user_name
+    }
+    return templates.TemplateResponse("user.html", {"request": request, "data": data})
