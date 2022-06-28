@@ -16,6 +16,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 @app.get("/", response_class=HTMLResponse)
 async def home(request: Request):
     data = openfile("home.md")
+    print(data)
     return templates.TemplateResponse("page.html", {"request": request, "data": data})
 
 

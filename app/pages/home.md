@@ -1,2 +1,1 @@
-# This is the home page
-to be or not the be that tis the question
+To be or not to be that is the question

@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}LN App{% endblock %}
+{% block title %}FastAPI Starter{% endblock %}
 {% block head %}
 {{ super() }}
 
@@ -8,9 +8,13 @@
 
 {% block page_content %}
 {% include 'include/sidebar.html' %}
-<h1>
-    Welcome to LN App.
-</h1>
+<main role="main" class="container">
+    <div class="row">
+        <div class="col">
+            {{data.text|safe}}
+        </div>
+    </div>
+</main><!-- /.container -->
 
 {{data.page}}
 
