@@ -7,3 +7,5 @@ Greeting from my Mac!
 [Fastapi](https://fastapi.tiangolo.com/)
 
 at static files
+
+[Different APIs](https://levelup.gitconnected.com/5-advance-features-of-fastapi-you-should-try-7c0ac7eebb3e)

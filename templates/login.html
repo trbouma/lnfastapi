@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Zero Login{% endblock %}
+
+{% block head %}
+{{ super() }}
+<script src="https://login.lnpay.ca/zerologin.js" defer /></script>
+
+
+
+{% endblock %}
+
+{% block page_content %}
+<center><h1 class="cap">Login Page</h1></center>
+<zero-login zlurl="https://login.lnpay.ca"></zero-login>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+
+
+{% endblock %}

@@ -4,9 +4,15 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
 from .library.helpers import *
+from app.routers import unsplash, login
+
+
 
 app = FastAPI()
 
+
+app.include_router(unsplash.router)
+app.include_router(login.router)
 
 templates = Jinja2Templates(directory="templates")
 
