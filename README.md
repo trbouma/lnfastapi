@@ -9,3 +9,5 @@ Greeting from my Mac!
 at static files
 
 [Different APIs](https://levelup.gitconnected.com/5-advance-features-of-fastapi-you-should-try-7c0ac7eebb3e)
+
+[Setting up in Heroku](https://towardsdatascience.com/how-to-deploy-your-fastapi-app-on-heroku-for-free-8d4271a4ab9)
